@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: light;
+  font-weight: 300;
   src:
     url(../fonts/opensans-light.eot),
     url(../fonts/opensans-light.ttf),
@@ -11,7 +11,7 @@
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   src:
     url(../fonts/opensans-regular.eot),
     url(../fonts/opensans-regular.ttf),    
@@ -21,7 +21,7 @@
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: semi bold;
+  font-weight: 600;
   src:
     url(../fonts/opensans-semibold.eot),
     url(../fonts/opensans-semibold.ttf),
@@ -31,7 +31,7 @@
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   src:
     url(../fonts/opensans-bold.eot),
     url(../fonts/opensans-bold.ttf),
@@ -39,17 +39,19 @@
 }
 
 
-body {
-  margin: 0;
+body {  
   font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  
+  color: #fff;
+  
+  background: #91b0ac url(../img/bg-image.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-  padding: 0;
+h2, p {
+  margin: 0;  
 }
