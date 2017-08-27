@@ -26,16 +26,43 @@
     
     <form class="credit-form" action="">
       <div class="credit-form__wrapper">
+       
         <h2 class="credit-form__request">Онлайн заявка</h2>
         <p class="credit-form__step">Шаг 1 <b>Эти данные нужны нам, чтобы связаться с вами</b></p>
-        <div><label for="">Фамилия<input type="text"></label></div>
-        <div><label for="">Имя<input type="text"></label></div>
-        <div><label for="">Отчество<input type="text"></label></div>
-        <label for="">Гражданство РФ
-          <label><input type="radio" name="nationality" id="nationality-no" checked>Нет</label>
-          <label><input type="radio" name="nationality" id="nationality-no">Да</label>
-        </label>
-        <button class="btn" type="submit">Отправить заявку</button>
+        
+         <div class="credit-form__field">
+          <label class="credit-form__label" for="">Фамилия</label>
+          <input class="credit-form__input-text" type="text">
+          <div class="baloon">Поле обязательно для заполнения</div>
+        </div>
+        
+         <div class="credit-form__field">
+          <label class="credit-form__label" for="">Имя</label>
+          <input class="credit-form__input-text" type="text">
+          <div class="baloon">Поле обязательно для заполнения</div>
+        </div>
+        
+         <div class="credit-form__field">
+          <label class="credit-form__label" for="">Отчество</label>
+          <input class="credit-form__input-text  credit-form__input-text--alert" type="text">
+          <div class="baloon">Поле обязательно для заполнения</div>
+        </div>
+        
+        <div class="credit-form__nationality">
+          <label class="credit-form__label" for="">Гражданство РФ</label>
+          <label class="credit-form__radio">
+            <input type="radio" name="nationality" id="nationality-no" checked>
+            <span class="credit-form__radio-indicator"></span>
+            Нет</label>
+          <label class="credit-form__radio  credit-form__radio-yes">
+            <input type="radio" name="nationality" id="nationality-no">
+            <span class="credit-form__radio-indicator  credit-form__radio-indicator--yes"></span>
+            Да</label> 
+          <div class="baloon  baloon--right">Кредит может быть выдан<br> только гражданам РФ</div>  
+        </div>        
+        
+        <button class="btn" type="submit">Отправить заявку</button>  
+        
       </div>
     </form>     
   </body>  

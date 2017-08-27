@@ -23,7 +23,8 @@
 }
 
 .credit-form__step {
-  padding: 15px;
+  padding: 16px;
+  margin-bottom: 60px;
   
   text-align: center;
   font-size: 18px;
@@ -39,4 +40,72 @@
   }
 }
 
-label {display: inline-block; vertical-align: top;}
+.credit-form__field {
+  margin-bottom: 28px;
+}
+
+.credit-form__label {
+  display: inline-block; 
+  width: 212px;  
+  
+  vertical-align: baseline;
+}
+
+.credit-form__input-text {
+  display: inline-block; 
+  margin-right: 19px;
+  border: 1px solid #d9dbe2;
+  width: 363px;
+  max-width: 100%;
+  height: 36px;
+  
+  vertical-align: middle;
+  
+  &--alert {
+    box-shadow: inset 0 0 6px 0 red;
+  }
+}
+
+.credit-form__nationality {
+  .clearfix();
+  margin-top: 38px;  
+}
+
+.credit-form__radio {
+  position: relative;
+  padding-left: 28px;  
+}
+
+.credit-form__radio-yes {
+  padding-left: 57px;  
+}
+
+.credit-form__radio-indicator {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -1px;
+  
+  width: 20px;
+  height: 20px;
+  
+  background-image: url(../img/radio.png);
+  background-repeat: no-repeat;
+  
+  &--yes {
+    left: 30px;
+  }
+}
+
+input[type="radio"]:checked + .credit-form__radio-indicator::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  
+  width: 15px;
+  height: 15px;
+  
+  background-image: url(../img/radio-checked.png);
+  background-repeat: no-repeat;
+}
