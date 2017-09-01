@@ -32,20 +32,20 @@
         
          <div class="credit-form__field">
           <label class="credit-form__label" for="">Фамилия</label>
-          <input class="credit-form__input-text" type="text">
-          <div class="baloon">Поле обязательно для заполнения</div>
+          <input name="family" id="input-family" class="credit-form__input-text" type="text">
+          <div class="baloon  baloon--alert">Поле обязательно для заполнения</div>
         </div>
         
          <div class="credit-form__field">
           <label class="credit-form__label" for="">Имя</label>
-          <input class="credit-form__input-text" type="text">
-          <div class="baloon">Поле обязательно для заполнения</div>
+          <input name="name" id="input-name" class="credit-form__input-text" type="text">
+          <div class="baloon baloon--alert">Поле обязательно для заполнения</div>
         </div>
         
          <div class="credit-form__field">
           <label class="credit-form__label" for="">Отчество</label>
-          <input class="credit-form__input-text  credit-form__input-text--alert" type="text">
-          <div class="baloon">Поле обязательно для заполнения</div>
+          <input  name="name2" id="input-name2" class="credit-form__input-text" type="text">
+          <div class="baloon  baloon--alert">Поле обязательно для заполнения</div>
         </div>
         
         <div class="credit-form__nationality">
@@ -58,10 +58,10 @@
             <input type="radio" name="nationality" id="nationality-no">
             <span class="credit-form__radio-indicator  credit-form__radio-indicator--yes"></span>
             Да</label> 
-          <div class="baloon  baloon--right">Кредит может быть выдан<br> только гражданам РФ</div>  
+          <div class="baloon  baloon--right">Кредит может быть выдан<br> только гражданам РФ</div> 
         </div>        
         
-        <button class="btn" type="submit">Отправить заявку</button>  
+        <button class="btn" type="submit" disabled>Отправить заявку</button>  
         
       </div>
     </form>
