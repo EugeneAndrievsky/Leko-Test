@@ -79,7 +79,7 @@ $(document).ready(function(){
 //	}
   
 	function validation() {
-		if ($('.baloon--alert').length == 0) {			
+		if ($('.baloon--alert').length == 1) {	//1 - временно, пока нету условия для radio		
 			$(".btn").removeAttr("disabled");
 		}
 		else{
