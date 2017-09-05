@@ -558,7 +558,7 @@ input[type="radio"] {
 }
 .credit-form__input-text {
   display: inline-block;
-  margin-right: 19px;
+  margin-right: 17px;
   border: 1px solid #d9dbe2;
   width: 363px;
   max-width: 100%;
@@ -574,7 +574,7 @@ input[type="radio"] {
 .credit-form__nationality-wrapper {
   display: inline-block;
   padding-top: 18px;
-  margin-right: 247px;
+  margin-right: 243px;
   min-height: 40px;
 }
 .credit-form__radio {
